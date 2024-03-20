@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transformando códigos em interfaces envolventes, o frontend é a arte de criar experiências digitais impactantes">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&family=Heebo:wght@700&display=swap" rel="stylesheet">
+    <title>Profile Front-end Marcus</title>
+
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div style="display: flex;gap: 64px;align-items: center;font-family: Heebo;">
+            <img class="cabecalho-imagem" src="img/logotipo_portfolio_etic 1.png" alt="logotipo front-end Marcus Batista">
+            <p class="title_1" style="color: white; font-size: 24px;font-family: Fira Mono;">Marcus Batista</p>
+        </div>
+
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="#home">Home</a>
+            <a class="cabecalho-menu-item" href="#Projetos">Projetos</a>
+            <a class="cabecalho-menu-item" href="#Sobre_Me">Sobre Me</a>
+            <a class="cabecalho-menu-item" href="#Contacto">Contacto</a>
+        </nav>
+    </header>
+
+
+    <main class="principal">
+        <section class="section_1">
+            <div class="section_1_div_1">
+                <img id="foto_user" />
+                <p class="title_2">Bem-vindo ao meu portfólio <span style="color:#EB7100">Front-end</span> </p>
+                <sub-title class="sub-title_1">Construindo o seu design em <span style="color:#EB7100">websites cativantes</span></p>
+            </div>
+            <div>
+                <a href="#Projetos"><button class="button_Next_Page">Next Page</button></a>
+            </div>
+            <div class="redes_socias">
+                <a class="icons" href="https://www.instagram.com/"><img src="img/instagram (1).png"></a>
+                <a class="icons" href="https://github.com/marcusbatist"><img src="img/github.png"></a>
+                <a class="icons" href=""><img src="img/whatsapp (2).png"></a>
+                <!-- TODO  Perguntar ao Bruno se vale a pena ter whatsapp,
+                     porque para aceder pelo website é preciso que o usuário tenha 
+                     que abrir whatsapp web ou ja ter o aplicativo no desktop
+                    
+                    A resposta dessa pergunta é: 
+                        - Mesmo que o usuário clika no icon linkado, vai no desktop um alert pre-definido
+                        do browser a opção de continuar online ou ir para a aplicação se tiver, senão tiver 
+                         o usuário próprio vai instlar e repitir o processo de novo, no mobile é mais fácil ainda
+                        vai diretamente para a aplicação e vai inciar uma conversa, por isso não devo me preocupar. -->
+            </div>
+        </section>
+
+
+        <section id="Projetos" class="section_2">
+
+            <h1 class="title_3">Projetos</h1>
+
+            <div class="section_2_div_2">
+                <div class="section_2_div_3">
+                    <h2 id="Nome_projeto">Epic Moment</h2>
+                    <img src="img/Epic.png" class="fotos_projetos">
+                    <p id="texto1" class="texto_projetos">Website sobre fotografia relacionadas ao<br> basquetebol com galerias e serviços</p>
+                    <button  class="button_esq_ver_projeto"> ver projeto</button>
+
+                </div>
+                <div class="section_2_div_4">
+                    <h2 id="Nome_projeto">Jackie&Nails</h2>
+                    <img src="img/jackienails_2.png" class="fotos_projetos">
+                    <p class="texto_projetos">Website com tema ligado à estética de unhas, <br> com galeria e serviço ao domicílio</p>
+                    <button class="button_dir_ver_projeto">ver projeto</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="Sobre_Me" class="section_3">
+
+            <div class="section_3_div_3">
+                <p class="title_4"> Sobre Me</p>
+            </div>
+
+            <div class="fundo_text_1">
+                <p class="texto_1">Nasci no Brasil, e vim para Portugal com 5 anos, ficando em Lisboa até 2016.<br> Depois fui para o Algarve, no meu secundário comecei a ganhar um certo interesse em informática,<br> e acabei o 12º ano no curso de Técnico de Multimídia,
+                    a seguir disso, fiz um Gap Year para juntar dinheiro<br> pro meu curso na Etic Algarve em Programação Web escolhendo ser Front-End.</p>
+            </div>~
+                
+            <div class="simbolos_linguagens">
+                <img src="img/html.png">
+                <img src="img/js.png">
+                <img src="img/css.png">
+            </div>
+
+            <div class="linha"></div>
+
+        </section>
+
+        <section id="Contacto" class="section_4">
+            
+            <div class="container">
+                <div>
+                    <h1 class="title_section_4">Contacto</h1>
+                </div>
+
+                <div>
+                    <form class="form" action="/submit_form" method="post">
+                    <label class="label" for="name">Name:</label><br>
+                    <input class="input" type="text" id="name" name="name"><br>
+                    <label class="label" for="email">Email:</label><br>
+                    <input class="input" type="email" id="email" name="email"><br>
+                    <label class="label" for="message">Message:</label><br>
+                    <textarea class="textarea"  id="message" name="message"></textarea><br>
+                    <input class="input_Submit"  type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+</body>
+
+</html>
